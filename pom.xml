@@ -14,7 +14,7 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
 		<app.runtime>4.2.0</app.runtime>
-		<mule.maven.plugin.version>3.5.0</mule.maven.plugin.version>
+		<mule.maven.plugin.version>3.4.2</mule.maven.plugin.version>
 		<exchange.url>https://maven.anypoint.mulesoft.com/api/v1/organizations/9902a510-1db7-40b4-a166-54ab3c32ff5e/maven</exchange.url>
 	</properties>
 
