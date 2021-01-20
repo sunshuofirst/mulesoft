@@ -161,9 +161,9 @@
     </pluginRepositories>
 	  <distributionManagement>
 	    <repository>
-	      <id>Repository</id>
+	      <id>exchange-server</id>
 	      <name>Corporate Repository</name>
-	      <url>https://maven.anypoint.mulesoft.com/api/v1/organizations/9902a510-1db7-40b4-a166-54ab3c32ff5e/maven</url>
+	      <url>${exchange.url}</url>
 	      <layout>default</layout>
 	    </repository>
 	  </distributionManagement>
