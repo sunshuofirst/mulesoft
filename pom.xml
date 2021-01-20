@@ -40,7 +40,6 @@
 					<!-- Environment Parameter -->
 					<environment>${cloudhub.environment}</environment>
 					<applicationName>${cloudhub.app}</applicationName>
-					<businessGroup>${cloudhub.bg}</businessGroup>
 					<workerType>${cloudhub.worker}</workerType>
 				</cloudHubDeployment>
 				<sharedLibraries>
