@@ -35,8 +35,8 @@
 					<uri>https://anypoint.mulesoft.com</uri>
 					<muleVersion>${mule.version}</muleVersion>
 					<!-- Deploy User Parameter -->
-					<connectedAppClientId>2637fc64ab784070891b5d0cf192044e</connectedAppClientId>
-					<connectedAppClientSecret>9670034d49C541a79cc814E2aC0084dC</connectedAppClientSecret>
+					<connectedAppClientId>5b5881f88e4b421ab3a82ad7d237a445</connectedAppClientId>
+					<connectedAppClientSecret>a2271d67257A41Dfa154f412c9B5767d</connectedAppClientSecret>
 					<connectedAppGrantType>client_credentials</connectedAppGrantType>
 					<!-- Environment Parameter -->
 					<environment>${cloudhub.environment}</environment>
