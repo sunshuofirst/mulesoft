@@ -30,6 +30,19 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
+				<cloudHubDeployment>
+					<uri>https://anypoint.mulesoft.com</uri>
+					<muleVersion>${mule.version}</muleVersion>
+					<!-- Deploy User Parameter -->
+					<connectedAppClientId>2637fc64ab784070891b5d0cf192044e</connectedAppClientId>
+					<connectedAppClientSecret>9670034d49C541a79cc814E2aC0084dC</connectedAppClientSecret>
+					<connectedAppGrantType>full</connectedAppGrantType>
+					<!-- Environment Parameter -->
+					<environment>${cloudhub.environment}</environment>
+					<applicationName>${cloudhub.app}</applicationName>
+					<businessGroup>${cloudhub.bg}</businessGroup>
+					<workerType>${cloudhub.worker}</workerType>
+				</cloudHubDeployment>
 				<sharedLibraries>
                         <sharedLibrary>
                             <groupId>org.springframework</groupId>
@@ -54,7 +67,7 @@
                     </sharedLibraries>
                 </configuration>
 			</plugin>
-		<plugin>
+			<plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.7.0</version>
