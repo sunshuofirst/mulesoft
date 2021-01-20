@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.mycompany</groupId>
+	<groupId>9902a510-1db7-40b4-a166-54ab3c32ff5e</groupId>
 	<artifactId>helloworld</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>mule-application</packaging>
@@ -15,6 +15,7 @@
 
 		<app.runtime>4.2.0</app.runtime>
 		<mule.maven.plugin.version>3.3.5</mule.maven.plugin.version>
+		<exchange.url>https://maven.anypoint.mulesoft.com/api/v1/organizations/9902a510-1db7-40b4-a166-54ab3c32ff5e/maven</exchange.url>
 	</properties>
 
 	<build>
@@ -138,6 +139,14 @@
             <url>https://repository.mulesoft.org/releases/</url>
             <layout>default</layout>
         </repository>
+		<repository>
+			<id>exchange-server</id>
+			<name>MuleSoft Exchange Environment</name>
+			<url>${exchange.url}</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
     </repositories>
     <pluginRepositories>
         <pluginRepository>
@@ -150,5 +159,12 @@
             </snapshots>
         </pluginRepository>
     </pluginRepositories>
-
+	  <distributionManagement>
+	    <repository>
+	      <id>Repository</id>
+	      <name>Corporate Repository</name>
+	      <url>https://maven.anypoint.mulesoft.com/api/v1/organizations/9902a510-1db7-40b4-a166-54ab3c32ff5e/maven</url>
+	      <layout>default</layout>
+	    </repository>
+	  </distributionManagement>
 </project>
